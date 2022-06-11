@@ -164,7 +164,7 @@
             this.labelRegister.Name = "labelRegister";
             this.labelRegister.Size = new System.Drawing.Size(360, 45);
             this.labelRegister.TabIndex = 13;
-            this.labelRegister.Text = "学生成绩管理登录系统";
+            this.labelRegister.Text = "学生成绩管理注册系统";
             // 
             // buttonRegister
             // 
