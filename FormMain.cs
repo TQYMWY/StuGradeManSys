@@ -3,7 +3,6 @@ using StuGradeManSys.Entities;
 using StuGradeManSys.Services;
 using StuGradeManSys.SubForm;
 using StuGradeManSys.Utils;
-
 namespace StuGradeManSys
 {
     public partial class FormMain : Form
