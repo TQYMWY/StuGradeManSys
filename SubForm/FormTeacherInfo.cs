@@ -119,6 +119,6 @@ namespace StuGradeManSys.SubForm
             buttonGiveUp.Visible = true;
         }
 
-
+        
     }
 }
