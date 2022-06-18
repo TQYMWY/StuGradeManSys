@@ -1,14 +1,4 @@
-﻿using StuGradeManSys.Entities;
-using StuGradeManSys.Services;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Data;
 
 namespace StuGradeManSys.SubForm
 {
@@ -96,6 +86,7 @@ namespace StuGradeManSys.SubForm
             {
                 var cozId = stuCozTable.Rows[i]["courseId"].ToString();
                 var cozRows = courseTable.Select("ID=" + cozId);
+                if (cozRows.Length == 0) break;
                 var cozName = cozRows[0]["Name"].ToString();
                 var tchId = cozRows[0]["TeacherId"].ToString();
                 var tchName = teacherTable.Select("ID=" + tchId)[0]["Name"];

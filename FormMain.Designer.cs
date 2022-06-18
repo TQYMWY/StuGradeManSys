@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.groupBoxUserInfo = new System.Windows.Forms.GroupBox();
-            this.buttonTest = new System.Windows.Forms.Button();
             this.buttonLoginOrLogout = new System.Windows.Forms.Button();
             this.labelRole = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
             this.labelID = new System.Windows.Forms.Label();
             this.panelSubForm = new System.Windows.Forms.Panel();
-            this.buttonTest2 = new System.Windows.Forms.Button();
-            this.buttonTest3 = new System.Windows.Forms.Button();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.labelOwn = new System.Windows.Forms.Label();
             this.groupBoxUserInfo.SuspendLayout();
+            this.panelSubForm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxUserInfo
             // 
-            this.groupBoxUserInfo.Controls.Add(this.buttonTest3);
-            this.groupBoxUserInfo.Controls.Add(this.buttonTest2);
-            this.groupBoxUserInfo.Controls.Add(this.buttonTest);
+            this.groupBoxUserInfo.Controls.Add(this.labelOwn);
             this.groupBoxUserInfo.Controls.Add(this.buttonLoginOrLogout);
             this.groupBoxUserInfo.Controls.Add(this.labelRole);
             this.groupBoxUserInfo.Controls.Add(this.labelName);
@@ -56,16 +56,6 @@
             this.groupBoxUserInfo.TabIndex = 0;
             this.groupBoxUserInfo.TabStop = false;
             this.groupBoxUserInfo.Text = "基本信息";
-            // 
-            // buttonTest
-            // 
-            this.buttonTest.Location = new System.Drawing.Point(711, 19);
-            this.buttonTest.Name = "buttonTest";
-            this.buttonTest.Size = new System.Drawing.Size(51, 29);
-            this.buttonTest.TabIndex = 1;
-            this.buttonTest.Text = "stu";
-            this.buttonTest.UseVisualStyleBackColor = true;
-            this.buttonTest.Click += new System.EventHandler(this.buttonTest_Click);
             // 
             // buttonLoginOrLogout
             // 
@@ -109,30 +99,30 @@
             // 
             // panelSubForm
             // 
+            this.panelSubForm.Controls.Add(this.pictureBoxLogo);
             this.panelSubForm.Location = new System.Drawing.Point(12, 60);
             this.panelSubForm.Name = "panelSubForm";
             this.panelSubForm.Size = new System.Drawing.Size(1025, 550);
             this.panelSubForm.TabIndex = 5;
             // 
-            // buttonTest2
+            // pictureBoxLogo
             // 
-            this.buttonTest2.Location = new System.Drawing.Point(777, 19);
-            this.buttonTest2.Name = "buttonTest2";
-            this.buttonTest2.Size = new System.Drawing.Size(51, 29);
-            this.buttonTest2.TabIndex = 4;
-            this.buttonTest2.Text = "tch";
-            this.buttonTest2.UseVisualStyleBackColor = true;
-            this.buttonTest2.Click += new System.EventHandler(this.buttonTest2_Click);
+            this.pictureBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogo.Image")));
+            this.pictureBoxLogo.Location = new System.Drawing.Point(436, 177);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(194, 193);
+            this.pictureBoxLogo.TabIndex = 0;
+            this.pictureBoxLogo.TabStop = false;
             // 
-            // buttonTest3
+            // labelOwn
             // 
-            this.buttonTest3.Location = new System.Drawing.Point(845, 19);
-            this.buttonTest3.Name = "buttonTest3";
-            this.buttonTest3.Size = new System.Drawing.Size(51, 29);
-            this.buttonTest3.TabIndex = 5;
-            this.buttonTest3.Text = "adm";
-            this.buttonTest3.UseVisualStyleBackColor = true;
-            this.buttonTest3.Click += new System.EventHandler(this.buttonTest3_Click);
+            this.labelOwn.AutoSize = true;
+            this.labelOwn.Font = new System.Drawing.Font("Microsoft YaHei UI", 5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelOwn.Location = new System.Drawing.Point(982, 2);
+            this.labelOwn.Name = "labelOwn";
+            this.labelOwn.Size = new System.Drawing.Size(67, 14);
+            this.labelOwn.TabIndex = 1;
+            this.labelOwn.Text = "by wy,wzh,lyb";
             // 
             // FormMain
             // 
@@ -148,6 +138,8 @@
             this.Shown += new System.EventHandler(this.FormMain_Shown);
             this.groupBoxUserInfo.ResumeLayout(false);
             this.groupBoxUserInfo.PerformLayout();
+            this.panelSubForm.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -159,9 +151,8 @@
         private Label labelRole;
         private Label labelName;
         private Label labelID;
-        private Button buttonTest;
         private Panel panelSubForm;
-        private Button buttonTest3;
-        private Button buttonTest2;
+        private PictureBox pictureBoxLogo;
+        private Label labelOwn;
     }
 }

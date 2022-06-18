@@ -85,7 +85,7 @@ namespace StuGradeManSys.SubForm
         private void buttonGiveUp_Click(object sender, EventArgs e)
         {
             user = FormMain.User.Copy<User>();
-            teacher = FormMain.User.Copy<Teacher>();
+            teacher = FormTeacher.Teacher.Copy<Teacher>();
             getUserInfoBack();
 
         }

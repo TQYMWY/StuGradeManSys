@@ -1,15 +1,5 @@
 ﻿using StuGradeManSys.Entities;
-using StuGradeManSys.Services;
 using StuGradeManSys.Utils;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace StuGradeManSys.SubForm
 {

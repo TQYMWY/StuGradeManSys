@@ -30,10 +30,9 @@
         {
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.InfoManageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.OpenCozToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.GradeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.StuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.StuInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.StuGradeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel = new System.Windows.Forms.Panel();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
@@ -43,6 +42,7 @@
             this.menuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.InfoManageToolStripMenuItem,
+            this.OpenCozToolStripMenuItem,
             this.GradeToolStripMenuItem,
             this.StuToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
@@ -58,6 +58,13 @@
             this.InfoManageToolStripMenuItem.Text = "个人信息管理";
             this.InfoManageToolStripMenuItem.Click += new System.EventHandler(this.InfoManageToolStripMenuItem_Click);
             // 
+            // OpenCozToolStripMenuItem
+            // 
+            this.OpenCozToolStripMenuItem.Name = "OpenCozToolStripMenuItem";
+            this.OpenCozToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
+            this.OpenCozToolStripMenuItem.Text = "课程开设";
+            this.OpenCozToolStripMenuItem.Click += new System.EventHandler(this.OpenCozToolStripMenuItem_Click);
+            // 
             // GradeToolStripMenuItem
             // 
             this.GradeToolStripMenuItem.Name = "GradeToolStripMenuItem";
@@ -67,26 +74,10 @@
             // 
             // StuToolStripMenuItem
             // 
-            this.StuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.StuInfoToolStripMenuItem,
-            this.StuGradeToolStripMenuItem});
             this.StuToolStripMenuItem.Name = "StuToolStripMenuItem";
             this.StuToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
             this.StuToolStripMenuItem.Text = "学生信息";
-            // 
-            // StuInfoToolStripMenuItem
-            // 
-            this.StuInfoToolStripMenuItem.Name = "StuInfoToolStripMenuItem";
-            this.StuInfoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.StuInfoToolStripMenuItem.Text = "基本信息查询";
-            this.StuInfoToolStripMenuItem.Click += new System.EventHandler(this.StuInfoToolStripMenuItem_Click);
-            // 
-            // StuGradeToolStripMenuItem
-            // 
-            this.StuGradeToolStripMenuItem.Name = "StuGradeToolStripMenuItem";
-            this.StuGradeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.StuGradeToolStripMenuItem.Text = "成绩查询";
-            this.StuGradeToolStripMenuItem.Click += new System.EventHandler(this.StuGradeToolStripMenuItem_Click);
+            this.StuToolStripMenuItem.Click += new System.EventHandler(this.StuToolStripMenuItem_Click);
             // 
             // panel
             // 
@@ -118,8 +109,7 @@
         private ToolStripMenuItem InfoManageToolStripMenuItem;
         private ToolStripMenuItem GradeToolStripMenuItem;
         private ToolStripMenuItem StuToolStripMenuItem;
-        private ToolStripMenuItem StuInfoToolStripMenuItem;
-        private ToolStripMenuItem StuGradeToolStripMenuItem;
         private Panel panel;
+        private ToolStripMenuItem OpenCozToolStripMenuItem;
     }
 }

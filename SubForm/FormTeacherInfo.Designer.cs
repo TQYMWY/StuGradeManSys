@@ -221,7 +221,7 @@
             this.labelTime.Name = "labelTime";
             this.labelTime.Size = new System.Drawing.Size(84, 20);
             this.labelTime.TabIndex = 48;
-            this.labelTime.Text = "入学时间：";
+            this.labelTime.Text = "入职时间：";
             // 
             // textBoxMail
             // 

@@ -47,6 +47,7 @@ namespace StuGradeManSys
         {
             if (User.ID > 0)
             {
+                pictureBoxLogo.Visible = false;
                 labelID.Text = "ID：" + User.ID.ToString();
                 labelName.Text = "姓名：" + User.Name.ToString();
                 labelRole.Text = "角色：" + User.Role.ToString();
@@ -69,6 +70,7 @@ namespace StuGradeManSys
             }
             else
             {
+                pictureBoxLogo.Visible = true;
                 labelID.Text = "ID：";
                 labelName.Text = "姓名：";
                 labelRole.Text = "角色：";
@@ -76,36 +78,6 @@ namespace StuGradeManSys
                 buttonLoginOrLogout.ForeColor = Color.Black;
                 panelSubForm.CloseForm();
             }
-        }
-
-        private void buttonTest_Click(object sender, EventArgs e)
-        {
-            User = new User();
-            User.ID = 10000002;
-            User.Name = "stuTest";
-            User.Role = "student";
-            User.Pwd = "123456";
-            flushInfo();
-        }
-
-        private void buttonTest2_Click(object sender, EventArgs e)
-        {
-            User = new User();
-            User.ID = 10000003;
-            User.Name = "teacherTest";
-            User.Role = "teacher";
-            User.Pwd = "123456";
-            flushInfo();
-        }
-
-        private void buttonTest3_Click(object sender, EventArgs e)
-        {
-            User = new User();
-            User.ID = 10000001;
-            User.Name = "admin";
-            User.Role = "administrator";
-            User.Pwd = "123456";
-            flushInfo();
         }
     }
 }

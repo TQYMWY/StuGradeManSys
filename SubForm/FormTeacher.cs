@@ -1,5 +1,4 @@
 ﻿using StuGradeManSys.Entities;
-using StuGradeManSys.Services;
 using StuGradeManSys.Utils;
 
 namespace StuGradeManSys.SubForm
@@ -46,7 +45,17 @@ namespace StuGradeManSys.SubForm
             panel.OpenForm(new FormTeacherGrade());
         }
 
-        private void StuInfoToolStripMenuItem_Click(object sender, EventArgs e)
+        private void OpenCozToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!CheckInfo())
+            {
+                MessageBox.Show("请先完善信息");
+                return;
+            }
+            panel.OpenForm(new FormTeacherCoz());
+        }
+
+        private void StuToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (!CheckInfo())
             {
@@ -54,16 +63,6 @@ namespace StuGradeManSys.SubForm
                 return;
             }
             panel.OpenForm(new FormTeacherStuInfo());
-        }
-
-        private void StuGradeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (!CheckInfo())
-            {
-                MessageBox.Show("请先完善信息");
-                return;
-            }
-            panel.OpenForm(new FormTeacherStuGrade());
         }
     }
 }

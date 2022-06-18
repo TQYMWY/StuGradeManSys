@@ -81,7 +81,14 @@ namespace StuGradeManSys.Databases
             var rows = dataset.Tables[0].Rows;
             if (rows.Count == 0) return 0;
             var row = rows[0];
-            var id = (long)row["ID"];
+            long id;
+            try
+            {
+                id = (long)row["ID"];
+            } catch(Exception)
+            {
+                id = 1000;
+            }
             return id + 1;
         }
         public static DataSet? Get<T>(this Repository<T> rep, string sql) where T : new()
